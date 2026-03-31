@@ -1,7 +1,6 @@
 float x_hoon,y_hoon,d_hoon,delta;
 float x_woo,y_woo,vx_woo,vy_woo;
 float x_zoo,y_zoo,vx_zoo,vy_zoo;
-float change_vari;
 void setup(){
   size(1400,800);
   x_hoon=0;
@@ -49,6 +48,7 @@ void draw(){
  zoo(x_zoo,y_zoo,2.5);
  
   //woo와 zoo의 충돌
+float change_vari;
  if(dist(x_woo,y_woo,x_zoo,y_zoo)<200){
   if(x_woo*x_zoo<0)
   {
